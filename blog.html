@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Blog</title>
+
+    <style>
+
+        body{
+            background: linear-gradient(100deg,#0f1829,#050812);
+           
+
+        }
+
+        video {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           display: block;
+           object-fit: cover;
+           z-index: -1;
+           
+        }
+
+        .container{
+            margin-top: 5%;
+           
+
+        }
+
+       
+        .single-content { 
+            position: relative;
+            transition: 0.3s;
+            box-shadow: 10px 20px 20px rgba(143, 73, 73, 0.8);
+            border: 2px solid rgb(196, 45, 45);
+        }
+        .single-content .text-content,
+        .single-content:after {
+             position: absolute;
+             left: 20px;
+             right: 20px;
+        } 
+        
+        .single-content:after{
+            content: '';
+            display: block;
+            background: crimson;
+            top: 20px;
+            bottom: 20px;
+            opacity: 0;
+            transform: rotate3d(-1, 1, 0, 100deg);
+            transition: .4s;
+
+        }
+
+        .single-content:hover:after {
+            opacity: .9;
+            transform: rotate3d(0,0,0,0deg);
+
+        }
+        .single-content img {
+            width: 100%;
+            height:300px;
+
+        }
+
+        .text-content{
+            top: 45%;
+            opacity: 0;
+            z-index: 1;
+            transform: translate(10%, -30%);
+            transition: .3s;
+            text-align: center;
+            color: #fff;
+        }
+
+        .text-content h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            background: linear-gradient(100deg,#0f1829,#050812);
+
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            text-shadow: 0 0 10px rgb(226, 124, 124);
+            color: rgb(228, 211, 211);
+        }
+
+        .single-content:hover .text-content {
+            opacity: 1;
+            transform: translate(0, -50%);
+            transition-delay: .3s;
+        }
+         </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <h1>SSS Technologies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="text-decoration: none; color: white;" >HOME</a></li>
+                    <li><a href="blog.html" style="text-decoration: none; color: white;">BLOG</a></li>
+                    <li><a href="signuppage.html" style="text-decoration: none; color: white;" >CONTACT</a></li>
+                    <li><a href="about.html"style="text-decoration: none; color: white;" >ABOUT</a></li>
+                    <li><a href="#" class="active" style="text-decoration: none; color: white;">Get Started</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="srch" id="srch"  placeholder="Enter Your Search">
+                    <button type="submit"><i class="fa fa-search "></i></button>
+                </form>
+            </nav>
+        </header>
+
+
+
+        <h1 class="text-center">BLOG</h1>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single-content">
+                    <img src="darkweb.jpg" alt="">
+                    <div class="text-content">
+                        <h2>Darkweb</h2>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="single-content">
+                    <img src="iot.jpg" alt="">
+                    <div class="text-content">
+                        <h2>Cyber Security</h2>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="single-content">
+                    <img src="hack.jpg" alt="" >
+                    <div class="text-content">
+                        <h2>Ethical Hacking</h2>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single-content">
+                    <img src="iot.jpg" alt="">
+                    <div class="text-content">
+                        <h2>Darkweb</h2>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="single-content">
+                    <img src="darkweb.jpg" alt="">
+                    <div class="text-content">
+                        <h2>Cyber Security</h2>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="single-content">
+                    <img src="iot.jpg" alt="" >
+                    <div class="text-content">
+                        <h2>Ethical Hacking</h2>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <video src="backgroundHome.mp4" autoplay muted loop></video>
+
+
+    
+
+  
+    </div>
+    
+</body>
+</html>
+
+

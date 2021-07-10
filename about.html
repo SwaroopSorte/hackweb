@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+   
+   <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Nunito', sans-serif;
+      }
+
+      body{
+            background: linear-gradient(100deg,#0f1829,#050812);
+           
+
+        }
+
+      video {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           display: block;
+           object-fit: cover;
+           z-index: -1;
+        }
+        
+        h1{ 
+            color: white;
+        }
+
+
+      .container{
+          width: 100%;
+     
+         
+      }
+
+      .container .title{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-size: 22px;
+          color: #222;
+          letter-spacing: 1.5px;
+          padding: 50px 0px;
+      }
+
+       .container .title h1::after {
+          content: '';
+          height: 6px;
+          width: 180px;
+          background-color: rgb(168, 165, 165);
+          border-radius: 6px;
+          position: relative;
+          display: block;
+          margin: auto;
+          color: #ddd;
+      }
+
+      .content {
+          width: 85%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap:40px;
+          margin: 30px auto;
+
+
+      }
+      .content .article{
+          box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.2);
+          background-color: #eee;
+          padding: 25px 25px;
+          text-align: center;
+      } 
+
+      .content .article h2 {
+          color: #00c8ff;
+          font-size: 22px;
+          line-height: 1.5 ;
+          letter-spacing: 1px;
+
+      }
+
+      .content .article p {
+          margin-top: 30px;
+          font-size: 19px;
+          line-height: 1.5;
+          color: #fff;
+      }
+
+      .content .article a {
+          text-decoration: none;
+          display: inline-block;
+          font-size: 22px;
+          padding: 12px 35px;
+          background-color: #cc0000;
+          border-radius: 25px;
+          color: #fff;
+          border: 1px solid #cc0000;
+          letter-spacing: 1.5px;
+          margin-top: 20px;
+
+      }
+
+      .content .article a:hover {
+          background-color: rgba(180, 170, 170, 0.425);
+          color: black;
+          transition: 0.2 ease;
+      }
+
+      .image-section {
+          width: 100%;
+          margin: auto;
+      }
+      #article {
+        background-color: rgba(27, 37, 63, 0.411);
+        border: 3px solid rgba(56, 56, 110, 0.918);
+        box-shadow: 0px 0px 3px black;
+
+      }
+
+      @media (max-width: 900px) {
+          
+      .content {
+          
+          grid-template-columns: repeat(1, 1fr);
+         
+      }
+      .article { 
+          text-align: center;
+
+      }
+
+      video {
+          height: 100%;
+      }
+
+    }
+
+      
+    </style>
+    <title>AboutUs</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <h1>SSS Technologies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="signuppage.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#" class="active">Get Started</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="srch" id="srch"  placeholder="Enter Your Search">
+                    <button type="submit"><i class="fa fa-search "></i></button>
+                </form>
+            </nav>
+        </header>
+
+        <div class="title">
+            <h1 >ABOUT US</h1>
+        </div>
+
+        <div class="content">
+            <div class="article" id="article">
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae aperiam et similique amet? Ipsam.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam totam iste ducimus. ipsum dolor sit, amet consectetur adipisicing elit. Asperiores modi quis magnam earum explicabo molestias fuga eius, inventore blanditiis totam soluta quae nihil voluptate maxime ea ratione. Obcaecati doloribus impedit ducimus fugiat esse rerum. Unde, eos asperiores? Magni, amet recusandae.</p>
+                <a href="about.html" class="button"> Read More</a>
+            </div>
+            <div class="image-section">
+                <img src="hacker.jpg" alt="" width="100%"  height="500px">
+            </div>
+            
+        </div>
+
+        <video src="backgroundHome.mp4" autoplay muted loop></video>
+
+
+
+    </div>
+
+    
+</body>
+</html>
